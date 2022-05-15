@@ -54,7 +54,7 @@ print("a>>2:",a>>2 ,"\tb>>4: ",b>>4)
 
 print("QUESTION 4.)")
 # WRITE A PYTHON PROGRAM TO CHECK IF THE WORD "NAME" IS PRESENT IN THE STRING ENTERED BY THE USER.
-string=input("ENTER ANY STRING")
+string=input("ENTER ANY STRING : ")
 s=string.find("name")
 if s==-1:
     print("NO")
