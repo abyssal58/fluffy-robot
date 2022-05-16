@@ -67,7 +67,7 @@ print("QUESTION 5.)")
 a = int(input("ENTER LENGTH OF FIRST SIDE OF TRAINGLE: "))
 b = int(input("ENTER LENGTH OF SECOND SIDE OF TRAINGLE: "))
 c = int(input("ENTER LENGTH OF THIRD SIDE OF TRAINGLE: "))
-d = a + b <= c or a + c <= b or c + b <= a
+d = a + b > c or a + c > b or c + b > a
 match d:
     case True:
         print("YES")
