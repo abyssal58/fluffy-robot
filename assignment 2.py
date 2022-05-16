@@ -64,13 +64,15 @@ else:
 #############################################################################################################
 
 print("QUESTION 5.)")
-a=int(input("ENTER LENGTH OF FIRST SIDE OF TRIANGLE: "))
-b=int(input("ENTER LENGTH OF SECOND SIDE OF TRIANGLE: "))
-c=int(input("ENTER LENGTH OF THIRD SIDE OF TRIANGLE: "))
-if a+b>c and b+c>a and a+c>b:
-    print("YES")
-else:
-    print("NO")
+a = int(input("Enter side 1: "))
+b = int(input("Enter side 2: "))
+c = int(input("Enter side 3: "))
+d = a + b <= c or a + c <= b or c + b <= a
+match d:
+    case True:
+        print("YES")
+    case False:
+        print("NO")
     
 #############################################################################################################
 
