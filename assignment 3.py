@@ -3,18 +3,14 @@ print("QUESTION 1.)")
 num = int(input("Enter the number to be converted to binary: "))
 print(bin(num))
 
-
 #################################################################################
-
 
 print("QUESTION 2.)")
 
 n = input("Enter the expression ")
 print(eval(n))
 
-
 #################################################################################
-
 
 print("QUESTION 3.)")
 
@@ -40,9 +36,7 @@ if x2 == x1:
 else: 
     print("y2-y1/x2-x1 = ", (y2 - y1)/(x2 - x1))
     
-
 #################################################################################
-
 
 print("QUESTION 4.)")
 
@@ -65,10 +59,8 @@ for i in range(15, 5, -2):
 print("In the range(5, 3)")
 for i in range(5, 3):
     print(i) 
-    
 
 ###################################################################################
-
 
 print("QUESTION 5.)")
 
