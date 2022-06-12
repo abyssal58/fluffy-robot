@@ -1,0 +1,29 @@
+QUESTION 1.)
+Enter Marks: 85
+Grade = A
+QUESTION 2.)
+Enter Year = 2024
+Year is a leap year
+QUESTION 3.)
+Question1:3x6=18
+Correct
+Question2:7x6=42
+Correct
+Question3:3x4=24
+ Incorrect, try again 
+Question4:8x8=64
+Correct
+Question5:4x3=12
+Correct
+Question6:4x10=40
+Correct
+Question7:2x5=10
+Correct
+Question8:9x9=81
+Correct
+Question9:3x10=30
+Correct
+Question10:5x9=50
+ Incorrect, try again 
+QUESTION 4.)
+Possible No of Candies:  177 
