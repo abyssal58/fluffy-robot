@@ -1,0 +1,125 @@
+QUESTION 1.)
+Enter a string: my name is arnav sharma
+amrahs vanra si eman ym
+QUESTION 2.)
+Enter start range2
+Énter end range98
+Enter a number3
+3 is divisible by  3
+6 is divisible by  3
+9 is divisible by  3
+12 is divisible by  3
+15 is divisible by  3
+18 is divisible by  3
+21 is divisible by  3
+24 is divisible by  3
+27 is divisible by  3
+30 is divisible by  3
+33 is divisible by  3
+36 is divisible by  3
+39 is divisible by  3
+42 is divisible by  3
+45 is divisible by  3
+48 is divisible by  3
+51 is divisible by  3
+54 is divisible by  3
+57 is divisible by  3
+60 is divisible by  3
+63 is divisible by  3
+66 is divisible by  3
+69 is divisible by  3
+72 is divisible by  3
+75 is divisible by  3
+78 is divisible by  3
+81 is divisible by  3
+84 is divisible by  3
+87 is divisible by  3
+90 is divisible by  3
+93 is divisible by  3
+96 is divisible by  3
+QUESTION 3.)
+Enter first side: 14
+Enter second side: 15
+Enter third side: 18
+The area of triangle is 102.16
+QUESTION 4.)
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+QUESTION 5.)
+Enter number of rows9
+A
+BC
+DEF
+GHIJ
+KLMNO
+PQRSTU
+VWXYZAB
+CDEFGHIJ
+KLMNOPQRS
+QUESTION 6.)
+Enter starting range9
+Enter ending range99
+11 is a prime number
+13 is a prime number
+17 is a prime number
+19 is a prime number
+23 is a prime number
+29 is a prime number
+31 is a prime number
+37 is a prime number
+41 is a prime number
+43 is a prime number
+47 is a prime number
+53 is a prime number
+59 is a prime number
+61 is a prime number
+67 is a prime number
+71 is a prime number
+73 is a prime number
+79 is a prime number
+83 is a prime number
+89 is a prime number
+97 is a prime number
+QUESTION 7.)
+77
+154
+231
+308
+385
+462
+QUESTION 8.)
+Enter the number 5
+Enter the number 9
+Enter the number -80
+Enter the number 76
+Enter the number -64
+Enter the number -85
+Enter the number 96
+Enter the number -200
+Enter the number 40
+Enter the number 4
+Positive numbers are:  [5, 9, 76, 96, 40, 4]
+Negative numbers are:  [-80, -64, -85, -200]
+Even numbers are:  [-80, 76, -64, 96, -200, 40, 4]
+Odd numbers are:  [5, 9, -85]
+Number of times each number occurs in the List {5: 1, 9: 1, -80: 1, 76: 1, -64: 1, -85: 1, 96: 1, -200: 1, 40: 1, 4: 1}
+QUESTION 9.)
+Enter total elements in the list5
+Enter a word toe
+Enter a word name
+Enter a word apple
+Enter a word rogue  
+Enter a word german
+toe occurs 1 times
+name occurs 1 times
+apple occurs 1 times
+rogue occurs 1 times
+german occurs 1 times
