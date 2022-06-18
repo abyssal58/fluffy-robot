@@ -125,17 +125,16 @@ print("Number of times each number occurs in the List",times)
 
 print("QUESTION 9.)")
 
-n=int(input("Number of words: "))
-li=[]
-for i in range(n):
-    word=input("Enter the word: ")
-    li.append(word)
-times={}
-for i in li :
-    if i not in times :
-        times[i]=1
-    else :
-        times[i]+=1
-print("Number of occurences: ",times)
-  
+word_list=[]
+elements=int(input('Enter total elements in the list'))
+for word in range(1,elements+1):
+  x=input('Enter a word ')
+  word_list.append(x)
+
+for element in word_list:
+  occ=0                                 #counter for occurrences in a list
+  for element1 in word_list:
+    if element==element1:
+      occ+=1
+  print (f"{element} occurs {occ} times")
   
