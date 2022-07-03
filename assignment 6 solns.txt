@@ -1,0 +1,46 @@
+ Question 1 
+Enter a number to find if it is a perfect number or not : 85
+The number is not a perfect number.
+ Question 2 
+Enter a word to check whether it is palindrome or not : civic
+The word is palindrome.
+ Question 3 
+Enter the number of rows : 9
+                              [1]
+                            [1, 1]
+                          [1, 2, 1]
+                        [1, 3, 3, 1]
+                      [1, 4, 6, 4, 1]
+                    [1, 5, 10, 10, 5, 1]
+                  [1, 6, 15, 20, 15, 6, 1]
+                [1, 7, 21, 35, 35, 21, 7, 1]
+              [1, 8, 28, 56, 70, 56, 28, 8, 1]
+ Question 4 
+Enter the sentence to check whether it is pangram or not: pack my box with five dozen liquor jugs
+The sentence is panagram.
+ Question 5 
+Enter the string with hyphen separated sequence to arrange it in alphabetical order : The - endsems - are - right - around - the - corner
+ are - around - corner- endsems - right - the -The  
+ Question 6 
+Enter the Student ID : 21102085
+If you want to enter only student name then press n, only student class then c or both then b : b
+Enter the Student's Name : Arnav Sharma
+Enter the Student's class : Civil 2nd semester
+### Data Print ###
+Student ID :  21102085
+Student Name :  Arnav Sharma
+Student Class :  Civil 2nd semester
+ Question 7 
+The instance student_1 is a instance of class student :  True
+The instance student_1 is a instance of class Marks :  False
+The instance Marks_1 is a instance of class student :  False
+The instance Marks_1 is a instance of class Marks :  True
+The class student is a sub-class of of the built in object class :  True
+The class Marks is a sub-class of of the built in object class :  True
+ Question 8
+Enter the numbers : -25, -10, -7, -3, 2, 4, 8, 10
+[-25, -10, -7, -3, 2, 4, 8, 10]
+The numbers which makes the sum equal to 0 are :  [[-10, 2, 8], [-7, -3, 10]]
+ Question 9 
+Enter the set of parenthesis to check whether it is valid or not : (){}[]
+The set of parenthesis is  valid.
