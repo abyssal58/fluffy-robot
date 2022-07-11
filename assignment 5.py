@@ -73,15 +73,17 @@ for i in range(1,row):
 
 print("QUESTION 6.)")
 
-range_start=int(input("Enter starting range"))
-range_end=int(input("Enter ending range"))
-for num in range(range_start,range_end+1):
-  c=0
-  for i in range(1,num+1):
-    if (num%i==0):
-      c+=1
-  if c==2:                              #prime number is divisible by only 1 and itself
-    print(f"{num} is a prime number")
+lower_value = int(input("Enter the Lower Range Value : "))  
+upper_value = int(input("Enter the Upper Range Value : "))    # input from user the lower and the upper range
+  
+print ("The Prime Numbers in this range are : ")  
+for number in range (lower_value, upper_value + 1):  
+    if number > 1:  
+        for i in range (2, number):                           # Check for each number if it has any factor between 1 and itself
+            if (number % i) == 0:                             # if YES, the code will move on
+                break       
+        else:  
+            print (number)                                    # if NO, the code prints the number
 
 ####################################################################################################
 
