@@ -39,36 +39,36 @@ else:
 ####################################################################################################
 
 print("QUESTION 4.)")
-for i in range(1,6):
-  c=0                       #c is a counter for printing '*'
-  for j in range(1,i+1):
-    c+=1
-  print('*'*c)
 
-
-
-a=4
-while a>0:
-  d=0                      #d is a counter for printing '*'
-  for b in range(1,a+1):
-    d+=1
-  print('*'*d)
-  a-=1
-print( )
+n=int(input("Enter no of rows"))
+for i in range(1,n):
+    if i<6:
+        k = i
+    else:
+        k = 10-i
+    for j in range(1,n//2+1):
+        if j<=k:
+            print("*",end="")
+    print()
 
 ####################################################################################################
 
 print("QUESTION 5.)")
 
-alphabets=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-rows=int(input("Enter number of rows"))
-c=0
-for i in range(1,rows+1):
-  for j in range(1,i+1):
-      print(alphabets[c%26],end="")           #use of end keyword for line formatting
-      c+=1
-  print()
-
+row=int(input(enter row))
+k=0
+for i in range(1,row):
+    
+    for j in range(1,i+1):
+        if j<=i:
+            if k<26:
+                print(chr(65+k),end="")
+            else:
+                k=0
+                print(chr(65+k),end="")
+           
+            k+=1
+    print()
 ####################################################################################################
 
 print("QUESTION 6.)")
