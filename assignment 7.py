@@ -457,135 +457,95 @@ for i in range(n):
 print("Question:5 ")
 	#5a
 	
-	def partition(l, r, nums):
-		# Last element will be the pivot and the first element the pointer
-		pivot, ptr = nums[r], l
-		for i in range(l, r):
-			if nums[i] <= pivot:
-				# Swapping values smaller than the pivot to the front
-				nums[i], nums[ptr] = nums[ptr], nums[i]
-				ptr += 1
-		# Finally swapping the last element with the pointer indexed number
-		nums[ptr], nums[r] = nums[r], nums[ptr]
-		return ptr
-	 
-	# With quicksort() function, we will be utilizing the above code to obtain the pointer
-	# at which the left values are all smaller than the number at pointer index and vice versa
-	# for the right values.
-	 
-	 
-	def quicksort(l, r, nums):
-		if len(nums) == 1:  # Terminating Condition for recursion. VERY IMPORTANT!
-			return nums
-		if l < r:
-			pi = partition(l, r, nums)
-			quicksort(l, pi-1, nums)  # Recursively sorting the left values
-			quicksort(pi+1, r, nums)  # Recursively sorting the right values
-		return nums
-	
-	n = eval(input("Enter a list in [] brackets:"))
-	
-	print(quicksort(0,len(n)-1,n))
-	
-	#5b
-	def binary_search(list1, x):  
-		low = 0  
-		high = len(list1) - 1  
-		mid = 0  
-	  
-		while low <= high:  
-			# for get integer result   
-			mid = (high + low) // 2  
-	  
-			# Check if n is present at mid   
-			if list1[mid] < x:  
-				low = mid + 1  
-	  
-			# If n is greater, compare to the right of mid   
-			elif list1[mid] > x:  
-				high = mid - 1  
-	  
-			# If n is smaller, compared to the left of mid  
-			else:  
-				return mid  
-	  
-				# element was not present in the list, return -1  
-		return -1  
-	  
-	  
-	# Initial list1    
-	x = int(input("Enter the element you want to search :"))
-	  
-	# Function call   
-	result = binary_search(n, x)  
-	  
-	if result != -1:  
-		print("Element is present at index", n.index(x))  
-	else:  
-		print("Element is not present in list1")  
-	
-	#5c
-	count = 0
-	for i in n:
-		if i == x:
-			count += 1
-	print(f'Number of occurences of element {x} is: {count}')
+def selectionsort(arr):
+    n= len(arr)
+    for i in range(n):
+        minimum=i
+        for j in range(i+1,n):
+            if(arr[j]<arr[minimum]):
+                minimum=j
+        (arr[i],arr[minimum])= (arr[minimum],arr[i])
+            
+    return arr
+
+def binarySearch(nums, target, searchFirst):
+    (left, right) = (0, len(nums) - 1)
+    result = -1
+    while left <= right:
+        mid = (left + right) // 2
+        if target == nums[mid]:
+            result = mid         
+            if searchFirst:
+                right = mid - 1
+            else:
+                left = mid + 1
+ 
+        elif target < nums[mid]:
+            right = mid - 1
+       
+        else:
+            left = mid + 1
+    return result
+ 
+nums = [4,5,2,4,5,6,2,3,4,5,7]
+target = 5
+z= selectionsort(nums)
+print(z)
+first = binarySearch(z, target, True)        # pass true for the first occurrence
+last = binarySearch(z, target, False)        # pass false for the last occurrence
+ 
+count = last - first + 1
+if first != -1:
+    print(f'Element {target} occurs {count} times')
+else:
+    print('Element found not in the list')
+ 
+ 
+
+ 
 
 ###########################################################################################
 
 	
 print("Question:6 ")
 	
-	def Remove(duplicate):
-		final_list = []
-		for num in duplicate:
-			if num not in final_list:
-				final_list.append(num)
-		return final_list
-	
-	list1 = eval(input("Enter a list of numbers containing duplicates inside []:"))
-	list2 = Remove(list1)
-	print(list2)
-	
-	def bubbleSort(array):
-		
-	  # loop to access each array element
-	  for i in range(len(array)):
-	
-		# loop to compare array elements
-		for j in range(0, len(array) - i - 1):
-	
-		  # compare two adjacent elements
-		  # change > to < to sort in descending order
-		  if array[j] > array[j + 1]:
-	
-			# swapping elements if elements
-			# are not in the intended order
-			temp = array[j]
-			array[j] = array[j+1]
-			array[j+1] = temp
-	
-	
-	bubbleSort(list2)
-	
-	print('Sorted List in Ascending Order by Bubble sort:')
-	print(list2)
-	
-	def selectionSort(array, size):
-	   
-		for step in range(size):
-			min_idx = step
-	
-			for i in range(step + 1, size):
-				if array[i] < array[min_idx]:
-					min_idx = i
-			 
-			# put min at the correct position
-			(array[step], array[min_idx]) = (array[min_idx], array[step])
-	
-	
-	list3 = Remove(list1)
-	size = len(list3)
-	selectionSort(list3, size)
-	print('Sorted Array in Ascending Order by Selection sort:')
-	print(list3)
+# Python code to remove duplicate elements
+def Remove(duplicate):
+    final_list = []
+    for num in duplicate:
+        if num not in final_list:
+            final_list.append(num)
+    return final_list
+     
+def selectionsort(arr):
+    n= len(arr)
+    for i in range(n):
+        minimum=i
+        for j in range(i+1,n):
+            if(arr[j]<arr[minimum]):
+                minimum=j
+        (arr[i],arr[minimum])= (arr[minimum],arr[i])
+            
+    return arr
+
+
+def bubble_sort(arr):
+    n=len(arr)
+    swapped = False
+    for i in range(n-1):
+        for j in range(0,n-i-1):
+            if arr[j]>arr[j+1]:
+                swapped = True
+                arr[j],arr[j+1] = arr[j+1],arr[j]
+        if not swapped:
+            return arr
+
+arr=[4,5,2,4,5,2,6,3,6,4,5,7]
+x=Remove(arr)
+print(x)
+y= selectionsort(x)
+print(y)
+
+z = bubble_sort(x)
+print(z)
+
